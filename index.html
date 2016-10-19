@@ -40,13 +40,13 @@
 
 <p>The only data cleaning that was actually required was conversion of the timestamp column that indicated when the user had posted the review, and when I had to convert the time I fetched for each reviewer; when I fetched the time played it was in minutes. I hadn't yet decided whether or not I was going to use timeseries analysis, just to be safe, the column was converted to interperatable pandas date-time objects. </p>
 
-<p><img src="https://rawgit.com/DanielEMoreno/DSI-SF-2-DanielEMoreno/master/code/projects/capstone/Plots/GRAPH%20WITH%20LABELS%20JUAN.png" alt=""></p>
+<p><img src="https://rawgit.com/DanielEMoreno/DSI-SF-2-DanielEMoreno/master/code/projects/capstone/Plots/class_imbalence.png" alt=""></p>
 
 <p>When coming to a decision on a model to use for depicting a linear relationship it was clear to me that the quickest, and easiest model to use was a Linear Regression. It would be able to tell me right away whether or not there was a relationship between my predictor and the target.There was also a very noticable problem with the distribution of classes I had available. For the case of linear regression it wouldn't be an issue as the sentiment rating isn't based on whether or not the review recommends the game or not.</p>
 
 <p>Below, the distribution of difference in hours played across all of the videogames. The observation to highlight is that most of the games have a distribution that ranges between 0-1000, but some of the games have a more spread out distribution of additional  hours logged, the two that are greater are the yellow and red band that rise above the rest, DotA2, and Counter Strike: Global Offensive</p>
 
-<p><img src="https://rawgit.com/DanielEMoreno/DSI-SF-2-DanielEMoreno/master/code/projects/capstone/Plots/class_imbalence.png" alt=""></p>
+<p><img src="https://rawgit.com/DanielEMoreno/DSI-SF-2-DanielEMoreno/master/code/projects/capstone/Plots/download%20(7).png" alt=""></p>
 
 <p>To define the valence of my reviews I use the textblob sentiment function. This is subjective, as is any sentiment rating, it is even more subjective however because I am not able to define sentiment of words due to my class imbalence, and the different words and phrases passed around between the different commmunities of the games. Without a class imbalence I prospectively would be able to get common words between reviews that dont recommend the game and reviews that do recommend the game it's reviewing. With this I could determine common topics discussed for games that have cetrain ratios of reviews recommending/not recommending the game, and thus be able to predict a videogame being taken in  by a community and thriving by what people think and say about the game.</p>
 
@@ -127,7 +127,7 @@
 
 <p>After seeing this it was necessary to do more exterior research about Skyrim and it's situation with mods.</p>
 
-<p><img src="https://rawgit.com/DanielEMoreno/DSI-SF-2-DanielEMoreno/master/code/projects/capstone/Plots/download%20(7).png" alt=""></p>
+<p><img src="https://rawgit.com/DanielEMoreno/DSI-SF-2-DanielEMoreno/master/code/projects/capstone/Plots/GRAPH%20WITH%20LABELS%20JUAN.png" alt=""></p>
 
 <p>"Just a few days after launching paid mods on Steam through the Skyrim Workshop, Valve is removing the payment option, citing customer feedback. Valve says it will refund Steam users who purchased a Skyrim mod on Steam" (Michael McWhertor - Polygon)</p>
 
